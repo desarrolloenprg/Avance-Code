@@ -1,0 +1,88 @@
+﻿<Window x:Class="Avance.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Avance"
+        mc:Ignorable="d"
+        Title="Obtener Avance en Code.org" Height="450" Width="800">
+        <!-- Add button to window -->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="5"
+      Grid.Row="2" 
+      Grid.ColumnSpan="4"
+      Margin="10,5,10,0"
+      HorizontalAlignment="Center">Características para hacer Scrapping de Code.org</TextBlock>
+
+        <TextBlock Grid.Column="4"
+      Grid.Row="6"
+      Margin="10,2,0,-2"
+      Grid.ColumnSpan="10"
+      Name="secc"
+      Width="60"
+      HorizontalAlignment="Left">Sección: </TextBlock>
+        
+        <TextBox Grid.Column="6"
+      Grid.Row="6"
+      Margin="10,2,0,-2"
+      Grid.ColumnSpan="4"
+      Name="seccion"
+      Width="60"
+      HorizontalAlignment="Left"/>
+
+        <TextBlock Grid.Column="4"
+      Grid.Row="8"
+      Margin="10,2,0,-2"
+      Grid.ColumnSpan="4"
+      Name="Res"
+      Width="60"                   
+      HorizontalAlignment="Left">Resultado:</TextBlock>
+        
+        <TextBox Grid.Column="6"
+      Grid.Row="8"
+      Margin="10,2,0,-2"
+      Grid.ColumnSpan="4"      
+      Name="resultado"
+      Width="60"
+      HorizontalAlignment="Left"/>
+        
+        <Button Grid.Row="10"
+      Grid.Column="6"
+      Margin="10,2,0,-2"                
+      Grid.ColumnSpan="4"      
+      Name="btnOK"
+      Width="60"
+      Click="ButtonClicked" 
+      HorizontalAlignment="Left">OK</Button>
+        
+    </Grid>
+</Window>
+    
